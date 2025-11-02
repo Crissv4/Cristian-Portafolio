@@ -51,7 +51,7 @@ body{
 }
 .hero .lead{font-size:1.125rem; opacity:0.95}
 
-/* Avatar */
+/* Avatar por defecto (si se usa fuera del wrap) */
 .avatar{
   width: 96px;
   height: 96px;
@@ -94,11 +94,12 @@ footer{background:#f8f9fa;padding:1rem 0}
 }
 
 /* imagen dentro del círculo */
-.avatar{
+.avatar-wrap .avatar{
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
+  border: 0; /* quitar borde doble si usamos avatar-wrap */
 }
 
 /* pequeño ajuste vertical para encajar con tu maqueta */
@@ -111,6 +112,12 @@ footer{background:#f8f9fa;padding:1rem 0}
   .avatar-wrap{ width: 88px; height: 88px; }
   .avatar-center{ transform: translateY(-5px); }
 }
-header.hero h1.display-5.fw-bold { color: #ffffff !important; -webkit-text-fill-color: #ffffff !important; }
 
-header.hero .container h1.display-5.fw-bold, .hero .container h1.display-5.fw-bold { color: #ffffff !important; -webkit-text-fill-color: #ffffff !important; opacity: 1 !important; text-shadow: 0 2px 8px rgba(0,0,0,0.6) !important; }
+/* Forzar color blanco en el h1 del hero (máxima especificidad) */
+header.hero .container h1.display-5.fw-bold,
+.hero .container h1.display-5.fw-bold {
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+  opacity: 1 !important;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.6) !important;
+}
