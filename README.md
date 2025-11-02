@@ -1,6 +1,6 @@
 # Cristian-Portafolio
 
-Bienvenido/a. Soy Cristian — Full Stack Developer & Data Scientist).
+Bienvenido/a. Soy Cristian Victorino — Full Stack Developer & Data Scientist.
 Aquí encontrarás una selección de mis proyectos, tecnologías y formas de contacto.
 
 Contenido
