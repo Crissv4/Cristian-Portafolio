@@ -75,3 +75,39 @@ footer{background:#f8f9fa;padding:1rem 0}
 /* Responsive */
 @media (max-width:991px){.hero{padding:5rem 1.5rem}}
 @media (max-width:575px){.hero{padding:4rem 1rem}.avatar{width:72px;height:72px}}
+
+/* Avatar centrado dentro de un círculo en el hero */
+.avatar-wrap{
+  position: relative;
+  width: 120px;        /* tamaño del círculo (ajusta si quieres) */
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid rgba(255,255,255,0.22);
+  box-shadow: 0 4px 18px rgba(0,0,0,0.45);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 0.75rem; /* centra horizontalmente dentro del contenedor */
+  z-index: 3;
+  background: rgba(255,255,255,0.02);
+}
+
+/* imagen dentro del círculo */
+.avatar{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* pequeño ajuste vertical para encajar con tu maqueta */
+.avatar-center{
+  transform: translateY(-8px);
+}
+
+/* responsive: reduce tamaño en pantallas pequeñas */
+@media (max-width:575px){
+  .avatar-wrap{ width: 88px; height: 88px; }
+  .avatar-center{ transform: translateY(-5px); }
+}
