@@ -3,10 +3,9 @@
 Bienvenido/a. Soy Cristian Victorino — Full Stack Developer & Data Scientist.
 Aquí encontrarás una selección de mis proyectos, tecnologías y formas de contacto.
 
-Contenido
-- Sobre mí
-- Proyectos destacados
-- Contacto
+Sobre mí
+
+Proyectos destacados
 
 Contacto
 - Email: cristianvictorino@gmail.com
