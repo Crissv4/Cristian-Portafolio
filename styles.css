@@ -151,4 +151,16 @@ footer{background:#f8f9fa;padding:1rem 0}
 header.hero h1.text-white,
 header.hero .text-white {
   color: #fff !important;
+
 }
+
+
+/* ---------- Forzar centrado del avatar dentro del hero ---------- / header.hero { / anula utilidades flex del header si existen */ display: block !important; position: relative; padding: 6rem 0; }
+
+header.hero .container, .hero .container { display: flex !important; flex-direction: column !important; align-items: center !important; /* centra horizontalmente / justify-content: center !important; / centra verticalmente dentro del hero */ gap: 0.5rem; z-index: 2; width: 100%; max-width: 1100px; margin: 0 auto; padding: 0 1rem; }
+
+/* Asegurar que avatar-wrap esté centrado en flujo / .avatar-wrap{ margin: 0 auto 0.75rem !important; position: relative; left: 0; transform: translateY(0) !important; / eliminar desplazamientos previos */ display: flex; align-items: center; justify-content: center; }
+
+/* Tamaño y recorte del avatar */ .avatar-wrap .avatar, .avatar { width: 120px; height: 120px; border-radius: 50%; object-fit: cover; display: block; border: 3px solid rgba(255,255,255,0.22); }
+
+/* Ajustes responsive */ @media (max-width:575px){ .avatar-wrap .avatar, .avatar { width: 88px; height: 88px; } header.hero .container{ padding-top: 0.6rem; } }
