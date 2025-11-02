@@ -155,12 +155,12 @@ header.hero .text-white {
 }
 
 
-/* ---------- Forzar centrado del avatar dentro del hero ---------- / header.hero { / anula utilidades flex del header si existen */ display: block !important; position: relative; padding: 6rem 0; }
+/* ---------- Forzar centrado del hero y del avatar (compatible con .d-flex .align-items-center) ---------- / header.hero { / mantén padding/posicion pero evita que .d-flex rompa el flujo / display: flex !important; flex-direction: column !important; / obligar columna / align-items: center !important; / centra horizontalmente / justify-content: center !important;/ centra verticalmente */ text-align: center; position: relative; padding: 6rem 0; min-height: 46vh; }
 
-header.hero .container, .hero .container { display: flex !important; flex-direction: column !important; align-items: center !important; /* centra horizontalmente / justify-content: center !important; / centra verticalmente dentro del hero */ gap: 0.5rem; z-index: 2; width: 100%; max-width: 1100px; margin: 0 auto; padding: 0 1rem; }
+/* asegurar que el container no cambie el centrado */ header.hero > .container { display: flex !important; flex-direction: column !important; align-items: center !important; justify-content: center !important; gap: 0.5rem; width: 100%; max-width: 1100px; margin: 0 auto; padding: 0 1rem; z-index: 2; }
 
-/* Asegurar que avatar-wrap esté centrado en flujo / .avatar-wrap{ margin: 0 auto 0.75rem !important; position: relative; left: 0; transform: translateY(0) !important; / eliminar desplazamientos previos */ display: flex; align-items: center; justify-content: center; }
+/* Avatar: tamaño fijo, recortado y centrado */ .avatar-wrap{ margin: 0 auto 0.75rem !important; display: flex; align-items: center; justify-content: center; position: relative; left: 0; transform: none !important; z-index: 3; }
 
-/* Tamaño y recorte del avatar */ .avatar-wrap .avatar, .avatar { width: 120px; height: 120px; border-radius: 50%; object-fit: cover; display: block; border: 3px solid rgba(255,255,255,0.22); }
+.avatar-wrap .avatar, .avatar { width: 120px !important; height: 120px !important; border-radius: 50% !important; object-fit: cover !important; display: block !important; border: 3px solid rgba(255,255,255,0.22) !important; }
 
-/* Ajustes responsive */ @media (max-width:575px){ .avatar-wrap .avatar, .avatar { width: 88px; height: 88px; } header.hero .container{ padding-top: 0.6rem; } }
+/* Responsive: reducir tamaño en móviles */ @media (max-width:575px){ header.hero { padding: 4rem 1rem; min-height: auto; } .avatar-wrap .avatar, .avatar { width: 88px !important; height: 88px !important; } header.hero > .container { padding-top: 0.6rem; } }
