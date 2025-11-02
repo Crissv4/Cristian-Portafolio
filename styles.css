@@ -112,3 +112,5 @@ footer{background:#f8f9fa;padding:1rem 0}
   .avatar-center{ transform: translateY(-5px); }
 }
 header.hero h1.display-5.fw-bold { color: #ffffff !important; -webkit-text-fill-color: #ffffff !important; }
+
+header.hero .container h1.display-5.fw-bold, .hero .container h1.display-5.fw-bold { color: #ffffff !important; -webkit-text-fill-color: #ffffff !important; opacity: 1 !important; text-shadow: 0 2px 8px rgba(0,0,0,0.6) !important; }
