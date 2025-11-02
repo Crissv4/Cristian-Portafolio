@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cristian — Portafolio .NET • C#</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Cristian</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">Sobre mí</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Proyectos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero text-white text-center d-flex align-items-center">
+    <div class="container">
+      <img src="assets/avatar.jpg" alt="Cristian" class="avatar mb-3">
+      <h1 class="display-5 fw-bold">Hola — soy Cristian</h1>
+      <p class="lead">Estudiante de Desarrollo de Software • Especialidad .NET • C# • Cert. Foundations en GitHub</p>
+      <a href="#projects" class="btn btn-primary btn-lg mt-2">Ver mis proyectos</a>
+    </div>
+  </header>
+
+  <main class="container py-5">
+    <section id="about" class="mb-5">
+      <h2>Sobre mí</h2>
+      <p>Soy estudiante de Desarrollo de Software especializado en el ecosistema .NET. Trabajo con C# para construir aplicaciones robustas y mantenibles. Además, cuento con la certificación Foundations en control de versiones con GitHub.</p>
+    </section>
+
+    <section id="projects" class="mb-5">
+      <h2>Proyectos destacados</h2>
+      <div class="row g-4">
+        <!-- Card 1 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm">
+            <img src="assets/proj1.png" class="card-img-top" alt="Proyecto 1">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">API REST con ASP.NET Core</h5>
+              <p class="card-text small text-muted mb-3">API CRUD con EF Core, SQLite y pruebas unitarias.</p>
+              <div class="mt-auto">
+                <a href="https://github.com/Crissv4/proyecto-api" class="btn btn-outline-primary btn-sm" target="_blank">Ver repo</a>
+                <a href="#" class="btn btn-primary btn-sm ms-2">Demo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm">
+            <img src="assets/proj2.png" class="card-img-top" alt="Proyecto 2">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">App consola - Gestor de registros</h5>
+              <p class="card-text small text-muted mb-3">Aplicación CLI en C# con persistencia SQLite y pruebas.</p>
+              <div class="mt-auto">
+                <a href="https://github.com/Crissv4/student-record" class="btn btn-outline-primary btn-sm" target="_blank">Ver repo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contacto</h2>
+      <p>Email: <a href="mailto:tu-email@ejemplo.com">tu-email@ejemplo.com</a> • <a href="https://www.linkedin.com/in/tu-perfil" target="_blank">LinkedIn</a></p>
+    </section>
+  </main>
+
+  <footer class="text-center py-4 bg-light">
+    <small>© 2025 Cristian — Hecho con ❤️ • <a href="https://github.com/Crissv4" target="_blank">GitHub</a></small>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
