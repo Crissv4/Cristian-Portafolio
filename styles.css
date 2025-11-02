@@ -111,5 +111,4 @@ footer{background:#f8f9fa;padding:1rem 0}
   .avatar-wrap{ width: 88px; height: 88px; }
   .avatar-center{ transform: translateY(-5px); }
 }
-
-h1.display-5.fw-bold { color: #ffffff !important; }
+header.hero h1.display-5.fw-bold { color: #ffffff !important; -webkit-text-fill-color: #ffffff !important; }
